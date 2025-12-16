@@ -7,7 +7,8 @@ This project implements a geometry-based pipeline for semantic segmentation of 3
 - **Input:** 3D point cloud data (.txt, .ply, or .pcd files) from S3DIS
 - **Output:** Segmented point clouds and visualizations (.ply, .png) for each room
 
-![Area 1 Office 5 Comparison](codes\test_results\Area_1_conferenceRoom_1_visualization.png)
+
+![Area 1 Conference Room Comparison](codes/test_results/Area_1_conferenceRoom_1_visualization.png)
 
 
 ---
