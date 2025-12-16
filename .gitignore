@@ -6,12 +6,12 @@ venv/
 __pycache__/
 *.pyc
 
-# Large data & outputs
-dataset/
-*.ply
-*.png
-*.jpg
-*.jpeg
+# # Large data & outputs
+# dataset/
+# *.ply
+# *.png
+# *.jpg
+# *.jpeg
 
 # Models
 *.pkl
@@ -21,3 +21,5 @@ dataset/
 # IDE
 .vscode/
 .idea/
+
+dataset/
