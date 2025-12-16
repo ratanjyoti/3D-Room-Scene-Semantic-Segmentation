@@ -2,14 +2,12 @@
 
 ## Overview
 
-This project implements a geometry-based pipeline for semantic segmentation of 3D indoor scenes using the S3DIS dataset. The goal is to segment rooms into meaningful components—**floor, ceiling, walls, and furniture**—using only rule-based and geometric methods (no deep learning).
+This project implements geometry-based and ML-enhanced pipelines for semantic segmentation of 3D indoor scenes using the S3DIS dataset. The goal is to segment rooms into meaningful components—**floor, ceiling, walls, furniture, and object classes like chairs/tables**—using clustering, geometric features, and a Random Forest classifier.
 
-- **Input:** 3D point cloud data (.txt, .ply, or .pcd files) from S3DIS
-- **Output:** Segmented point clouds and visualizations (.ply, .png) for each room
-
+- **Input:** 3D point cloud data (.txt from S3DIS; can be converted to .ply/.pcd)  
+- **Output:** Segmented point clouds and visualizations (.ply, .png) for each room  
 
 ![Area 1 Conference Room Comparison](codes/test_results/Area_1_conferenceRoom_1_visualization.png)
-
 
 ---
 
@@ -33,12 +31,13 @@ This project implements a geometry-based pipeline for semantic segmentation of 3
 
 ## Features
 
-- Loads and preprocesses 3D indoor scenes
-- Removes noise and downsamples point clouds
-- Segments rooms using DBSCAN/Euclidean clustering
-- Labels clusters using geometric rules (floor, ceiling, walls, furniture)
-- Visualizes results and exports to .ply and .png files
-- Batch processing for all rooms in all areas
+- Loads and preprocesses 3D indoor scenes from S3DIS  
+- Removes noise and downsamples point clouds  
+- Segments rooms using DBSCAN / Euclidean clustering  
+- Rule-based semantic labeling: floor, ceiling, walls, furniture  
+- ML-enhanced labeling: Random Forest classifier for objects (chairs, tables, doors, windows, etc.)  
+- Visualizes results and exports .ply and .png files  
+- Batch processing for all rooms in all areas  
 
 ---
 
@@ -49,6 +48,9 @@ This project implements a geometry-based pipeline for semantic segmentation of 3
 - [S3DIS Dataset on Kaggle](https://www.kaggle.com/datasets/ratanjyoti/s3dis-point-cloud-segmentation)
 
 After downloading, extract the dataset so it matches this structure:
+
+
+![Area 1 Conference Room Comparison](codes/test_results/Area_1_conferenceRoom_1_visualization.png)
 
 ```
 Stanford3dDataset_v1.2_Aligned_Version/
