@@ -7,7 +7,7 @@ This project implements a geometry-based pipeline for semantic segmentation of 3
 - **Input:** 3D point cloud data (.txt, .ply, or .pcd files) from S3DIS
 - **Output:** Segmented point clouds and visualizations (.ply, .png) for each room
 
-![Area 1 Office 5 Comparison](codes/output_Area_1_office_5/Area_1_office_5_comparison.png)
+![Area 1 Office 5 Comparison](codes\test_results\Area_1_conferenceRoom_1_visualization.png)
 
 
 ---
@@ -19,9 +19,11 @@ This project implements a geometry-based pipeline for semantic segmentation of 3
 - [Installation](#installation)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
-  - [Quick Start](#quick-start)
-  - [Batch Processing](#batch-processing)
-  - [Manual Room Selection](#manual-room-selection)
+- [Quick Start (Classical Pipeline)](#quick-start-classical-pipeline)
+- [ML-Enhanced Pipeline](#ml-enhanced-pipeline)
+- [Batch Processing](#batch-processing)
+- [Manual Room Selection](#manual-room-selection)
+- [Testing on a Single Room](#testing-on-a-single-room)
 - [Output Files](#output-files)
 - [Parameter Tuning](#parameter-tuning)
 - [References](#references)
@@ -87,19 +89,31 @@ pip install plotly
 ## Project Structure
 
 ```
-project/
-├── dataset_explore.py           # Dataset loading and exploration
-├── preprocessing_module.py      # Noise removal & downsampling
-├── clustering_module.py         # Clustering algorithms
-├── labeling_module.py           # Rule-based semantic labeling
-├── visualization_module.py      # Visualization & export
-├── main_pipeline.py             # Complete integrated pipeline
-├── quick_start_script.py        # Quick test script
-├── batch_process.py             # Batch processing script
-├── README.md                    # This file
-└── requirements.txt             # Python dependencies
-```
+3D-Room-Scene-Semantic-Segmentation/
+├── codes/
+│   ├── batch_process.py
+│   ├── clustering_module.py
+│   ├── labelling_module.py
+│   ├── main_pipeline.py
+│   ├── ml_segmentation_pipeline.py
+│   ├── my_room.py
+│   ├── preprocessing_module.py
+│   ├── quick_script.py
+│   ├── simple_test.py
+│   ├── simple_train.py
+│   ├── visualization_module.py
+│   └── test_results/              # example outputs (optional to commit)
+│
+├── dataset/                       # S3DIS data (ignored in git)
+├── .venv/                         # virtual env (ignored)
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 
+```
+Run simple_train.py to train the model 
+Run simple_test.py to test how the model is performing
 ---
 
 ## Usage
