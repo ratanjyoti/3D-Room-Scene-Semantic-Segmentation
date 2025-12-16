@@ -1,0 +1,23 @@
+# Envs
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Large data & outputs
+dataset/
+*.ply
+*.png
+*.jpg
+*.jpeg
+
+# Models
+*.pkl
+*.pt
+*.pth
+
+# IDE
+.vscode/
+.idea/
