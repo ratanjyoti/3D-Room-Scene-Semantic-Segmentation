@@ -49,9 +49,6 @@ This project implements geometry-based and ML-enhanced pipelines for semantic se
 
 After downloading, extract the dataset so it matches this structure:
 
-
-![Area 1 Conference Room Comparison](codes/test_results/Area_1_conferenceRoom_1_visualization.png)
-
 ```
 Stanford3dDataset_v1.2_Aligned_Version/
 ├── Area_1/
