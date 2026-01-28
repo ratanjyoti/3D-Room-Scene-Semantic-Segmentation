@@ -99,7 +99,7 @@ pip install plotly
 │ ├── clustering_module.py
 │ ├── labelling_module.py
 │ ├── main_pipeline.py
-│ ├── ml_segmentation_pipeline.py
+│ ├── ml_segmentation_pipeline.py    (main python file to run)
 │ ├── my_room.py
 │ ├── preprocessing_module.py
 │ ├── quick_script.py
@@ -107,8 +107,8 @@ pip install plotly
 │ ├── simple_train.py
 │ └── visualization_module.py
 ├── web/
-│ └── dataset/
-├── app.py
+│ └── dataset/        (download sample dataset to test the model)
+├── app.py            (website code)
 ├── .gitignore
 ├── LICENSE
 ├── README.md
