@@ -90,22 +90,25 @@ pip install plotly
 
 ```
 3D-Room-Scene-Semantic-Segmentation/
+├── .venv/
 ├── codes/
-│   ├── batch_process.py
-│   ├── clustering_module.py
-│   ├── labelling_module.py
-│   ├── main_pipeline.py
-│   ├── ml_segmentation_pipeline.py
-│   ├── my_room.py
-│   ├── preprocessing_module.py
-│   ├── quick_script.py
-│   ├── simple_test.py
-│   ├── simple_train.py
-│   ├── visualization_module.py
-│   └── test_results/              # example outputs (optional to commit)
-│
-├── dataset/                       # S3DIS data (ignored in git)
-├── .venv/                         # virtual env (ignored)
+│ ├── pycache/
+│ ├── output_Area_1_conferenceRoom_1/
+│ ├── test_results/
+│ ├── batch_process.py
+│ ├── clustering_module.py
+│ ├── labelling_module.py
+│ ├── main_pipeline.py
+│ ├── ml_segmentation_pipeline.py
+│ ├── my_room.py
+│ ├── preprocessing_module.py
+│ ├── quick_script.py
+│ ├── simple_test.py
+│ ├── simple_train.py
+│ └── visualization_module.py
+├── web/
+│ └── dataset/
+├── app.py
 ├── .gitignore
 ├── LICENSE
 ├── README.md
