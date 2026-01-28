@@ -178,7 +178,7 @@ def main():
     # ========================================================================
     # CONFIGURATION
     # ========================================================================
-    DATASET_PATH = r"E:\3D-semantic\3D-Room-Scene-Semantic-Segmentation\dataset\Stanford3dDataset_v1.2_Aligned_Version"
+    DATASET_PATH = r"E:\downloads_new\archive (1)\Stanford3dDataset_v1.2_Aligned_Version"
     MODEL_PATH = "trained_model.pkl"
     OUTPUT_DIR = "test_results"
     

@@ -364,7 +364,7 @@ class RoomSegmentationPipeline:
 if __name__ == "__main__":
     
     # Configuration
-    DATASET_PATH = r"E:\3D-semantic\3D-Room-Scene-Semantic-Segmentation\dataset\Stanford3dDataset_v1.2_Aligned_Version"
+    DATASET_PATH = r"E:\downloads_new\archive (1)\Stanford3dDataset_v1.2_Aligned_Version"
     
     # Example: Process Area_1/conferenceRoom_1
     AREA = "Area_1"

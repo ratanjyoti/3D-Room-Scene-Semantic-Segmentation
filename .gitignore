@@ -2,6 +2,11 @@
 .venv/
 venv/
 
+*.pyd
+*.so
+*.dll
+*.exe
+
 # Python cache
 __pycache__/
 *.pyc
@@ -22,4 +27,3 @@ __pycache__/
 .vscode/
 .idea/
 
-dataset/

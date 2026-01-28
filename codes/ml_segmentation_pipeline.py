@@ -574,7 +574,7 @@ if __name__ == "__main__":
                        choices=['train', 'test'],
                        help='Mode: train (train model) or test (test on new room)')
     parser.add_argument('--dataset', type=str, 
-                       default=r"E:\3D-semantic\3D-Room-Scene-Semantic-Segmentation\dataset\Stanford3dDataset_v1.2_Aligned_Version",
+                       default=r"E:\downloads_new\archive (1)\Stanford3dDataset_v1.2_Aligned_Version",
                        help='Path to dataset')
     parser.add_argument('--max_rooms', type=int, default=None,
                        help='Max rooms for training (None = all rooms)')

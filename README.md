@@ -4,6 +4,8 @@
 
 This project implements geometry-based and ML-enhanced pipelines for semantic segmentation of 3D indoor scenes using the S3DIS dataset. The goal is to segment rooms into meaningful components—**floor, ceiling, walls, furniture, and object classes like chairs/tables**—using clustering, geometric features, and a Random Forest classifier.
 
+To test different rooms and visualize the results, download the dataset from **web/dataset/.txt** and upload each room to website. You can visualize the results on website.
+
 - **Input:** 3D point cloud data (.txt from S3DIS; can be converted to .ply/.pcd)  
 - **Output:** Segmented point clouds and visualizations (.ply, .png) for each room  
 
@@ -113,6 +115,7 @@ pip install plotly
 ├── LICENSE
 ├── README.md
 └── requirements.txt
+
 
 ```
 Run simple_train.py to train the model 
