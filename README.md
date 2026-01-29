@@ -18,6 +18,7 @@ To test different rooms and visualize the results, download the dataset from **w
 - **Output:** Segmented point clouds and visualizations (.ply, .png) for each room  
 
 ![Area 1 Conference Room Comparison](codes/test_results/Area_1_conferenceRoom_1_visualization.png)
+Click the image above to watch the demo on YouTube
 
 ---
 
