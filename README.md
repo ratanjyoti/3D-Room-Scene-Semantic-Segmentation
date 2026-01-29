@@ -6,6 +6,14 @@ This project implements geometry-based and ML-enhanced pipelines for semantic se
 
 To test different rooms and visualize the results, download the dataset from **web/dataset/.txt** and upload each room to website. You can visualize the results on website.
 
+## 🎥 Demo Video
+
+[![App Demo](https://img.youtube.com/vi/1lR9kaH7EKQ/0.jpg)](https://youtu.be/1lR9kaH7EKQ)
+
+
+> This demo shows how a room image is uploaded and converted into a detailed 3D visualization, including all objects such as wall photos, tables, and chairs.
+
+
 - **Input:** 3D point cloud data (.txt from S3DIS; can be converted to .ply/.pcd)  
 - **Output:** Segmented point clouds and visualizations (.ply, .png) for each room  
 
